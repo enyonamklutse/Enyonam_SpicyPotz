@@ -1,0 +1,10 @@
+div a{
+   display: flexbox;
+   justify-content: space-around;
+   color: black;
+   text-decoration: none;
+   padding: 5px;
+   margin: 30px;
+   background-color: aqua;
+
+}

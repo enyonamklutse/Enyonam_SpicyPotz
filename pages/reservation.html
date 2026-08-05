@@ -4,72 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://kit.fontawesome.com/69b7f0c38b.js" crossorigin="anonymous"></script>
-    <title>Reservation</title>
+    <title>Reservation | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-     <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
-    <a href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a>
-    <a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
-    <a href="reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a>
-    <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-    <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
-    <a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <img src="../images/logo1.jpg" alt="">
-    <p>Spicy Potz</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Book a table</span>
+        <h1>Make a reservation</h1>
+        <p>Book your table and enjoy an unforgettable dining experience at Spicy Potz.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/dining setting.jpg" alt="Restaurant table setting">
+        <div class="promo-text">
+          <strong>Reserve your evening</strong>
+          <span>Warm dining • elegant setup • personalized service</span>
+        </div>
+      </div>
+    </section>
 
-    <h1>Make a reservation</h1>
-    <p>Book your table and enjoy an unforgettable dining experience at Spicy Potz</p>
-    <img src="../images/dining setting.jpg" alt="">
+    <section class="contact-layout">
+      <div class="form-panel">
+        <h2>Reservation Details</h2>
+        <form action="" method="get" class="form-grid">
+          <div class="form-row">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
+          </div>
 
-    <h2>Reservation Details</h2>
-    <form action="" method="get">
-        <label for="Name">Name:</label><br>
-        <input type="text" id="" name="Name" required><br>
+          <div class="form-row">
+            <label for="Email_Address">Email Address:</label>
+            <input type="email" name="Email Address" id="Email_Address" required>
+          </div>
 
-        <label for="Email Address">Email Address:</label><br>
-        <input type="email" name="Email Address" id="" required><br>
+          <div class="form-row">
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" name="Phone" required>
+          </div>
 
-        <label for="Telephone">Phone:</label><br>
-        <input type="text" id="" name="Phone" required><br>
+          <div class="form-row">
+            <label for="Date">Date</label>
+            <input type="date" name="Date" id="Date" required>
+          </div>
 
-        <label for="Date">Date</label>
-        <input type="date" name="Date" id="" required>
+          <div class="form-row">
+            <label for="Time">Time</label>
+            <input type="time" name="Time" id="Time" required>
+          </div>
 
-        <label for="Time">Time</label>
-        <input type="Time" name="Time" id="" required><br>
+          <div class="form-row">
+            <label for="Guests">Guests:</label>
+            <input type="number" name="Guests" id="Guests" required>
+          </div>
 
-        <label for="Guests">Guests:</label><br>
-        <input type="number" name="Guests" id="" required><br>
+          <div class="form-row">
+            <label for="Special_Guests">Special Guests (Optional)</label>
+            <textarea name="Special Guests" id="Special_Guests" placeholder="Write your request here...."></textarea>
+          </div>
 
-        <label for="Special Guests">Special Guests(Optional)</label><br>
-        <textarea name="Special Guests" id="" cols="30" rows="10" required placeholder="Write your request here...."></textarea>
-    </form>
-    <button>Book Now</button>
+          <button type="submit" class="btn btn-primary form-submit">Book Now</button>
+        </form>
+      </div>
 
-    <h1>Restaurant Info</h1>
+      <div class="info-list">
+        <article class="info-card">
+          <h3><span class="icon-wrap"><i class="fa-solid fa-clock"></i></span>Opening Hours</h3>
+          <p>Mon-Sun</p>
+          <p>9:00AM-10:00PM</p>
+        </article>
 
-    <h3><i class="fa-solid fa-clock fa-2xl" style="color: rgb(255, 160, 59);"></i>Opening Hours</h3>
-    <p>Mon-Sun</p>
-    <p>9:00AM-10:00PM</p>
+        <article class="info-card">
+          <h3><span class="icon-wrap"><i class="fa-solid fa-phone"></i></span>Call Us</h3>
+          <p><a href="tel:+233593131502" class="muted-link">+233 593 131 502</a></p>
+        </article>
 
-<h3><i class="fa-solid fa-phone fa-2xl" style="color: rgb(255, 160, 59);"></i>Call Us</h3>
-<p><a href="tel: +233 593 131 502" target="_blank" rel="noopener noreferrer">+233 593 131 502</a></p>
+        <article class="info-card">
+          <h3><span class="icon-wrap"><i class="fa-solid fa-location-dot"></i></span>Location</h3>
+          <p>Kanda Estate</p>
+        </article>
 
-<h3><i class="fa-solid fa-location-dot fa-2xl" style="color: rgb(255, 160, 59);"></i>Location</h3>
-<p>Kanda Estate</p><hr>
+        <article class="info-card">
+          <h3>Follow Us</h3>
+          <div style="display:flex; gap:1rem; margin-top:0.7rem;">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<h2>Follow Us</h2>
-<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
-    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-2xl" style="color: rgb(255, 59, 59);"></i></a>
+    <section class="form-panel" style="margin-top: 1.5rem;">
+      <h2>Subscribe to our newsletter</h2>
+      <form action="" method="get" class="form-grid" style="grid-template-columns: 1fr auto; align-items: end;">
+        <div class="form-row">
+          <label for="Newsletter_Email">Email:</label>
+          <input type="email" name="Email" id="Newsletter_Email" required placeholder="Enter your email...">
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" style="width: auto;">Subscribe</button>
+      </form>
+    </section>
+  </main>
 
-    <h2>Subscribe to our newsletter</h2>
-    <form action="" method="get">
-        <label for="Email">Email:</label><br>
-        <input type="email" name="Email" id="" required placeholder="Enter your email..."><br>
-    </form>
-    <button>Subscribe</button>
-    <p> &copy; 2026 Spicy Potz Restaurant. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Spicy Potz Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

@@ -3,26 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Gallery | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-    <img src="/images/logo1.jpg" alt="">
-   <p>Spicy Potz</p>
-    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
-     <a href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a>
-     <a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
-     <a href="reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a>
-     <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-     <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
-     <a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<h1>Our Gallery</h1>
-<p>A glimpse of our delicious meals, warm ambience and unforgettable moments</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Gallery</span>
+        <h1>Our Gallery</h1>
+        <p>A glimpse of our delicious meals, warm ambience and unforgettable moments.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/dining setting.jpg" alt="Restaurant ambience">
+        <div class="promo-text">
+          <strong>Spicy Potz moments</strong>
+          <span>Food • drinks • ambience • celebrations</span>
+        </div>
+      </div>
+    </section>
 
-<a href="gallery.html" target="_blank" rel="noopener noreferrer">All</a>
-<a href="food.html" target="_blank" rel="noopener noreferrer">Food</a>
-<a href="Drinks.html" target="_blank" rel="noopener noreferrer">Drinks</a>
-<a href="ambience.html" target="_blank" rel="noopener noreferrer">Ambience</a>
-<a href="events.html" target="_blank" rel="noopener noreferrer">Events</a>
+    <nav class="category-nav" aria-label="Gallery categories">
+      <button type="button" class="category-link is-active" data-gallery-filter="all">All</button>
+      <button type="button" class="category-link" data-gallery-filter="food">Food</button>
+      <button type="button" class="category-link" data-gallery-filter="drinks">Drinks</button>
+      <button type="button" class="category-link" data-gallery-filter="ambience">Ambience</button>
+      <button type="button" class="category-link" data-gallery-filter="events">Events</button>
+    </nav>
+
+    <section class="gallery-panel" data-gallery-panel="all">
+      <section class="page-hero" style="margin-top: 1rem; margin-bottom: 2rem;">
+        <div>
+          <!-- <span class="eyebrow">All</span> -->
+          <h1>Luxury dining, softly lit.</h1>
+          <p>Warm woods, rich reds, amber lighting, and modern elegance are all part of the Spicy Potz atmosphere.</p>
+        </div>
+        <div class="promo-panel">
+          <img src="../images/catering-service-restaurant.avif" alt="Luxury restaurant dining ambience">
+          <div class="promo-text">
+            <strong>Atmosphere</strong>
+            <span>Warm lighting • rich colors • modern luxury</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="../images/jollof.webp" alt="Jollof rice with chicken">
+          <div class="overlay"><span>Signature food</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/iced tea.avif" alt="Iced tea">
+          <div class="overlay"><span>Refreshment</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/catering-service-restaurant.avif" alt="Luxury restaurant ambience">
+          <div class="overlay"><span>Ambience</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/birthday-celebration-event.jpg" alt="Birthday celebration event">
+          <div class="overlay"><span>Events</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/restaurant-karaoke-room.jpg" alt="Karaoke night">
+          <div class="overlay"><span>Night energy</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/weddings.jpg" alt="Wedding setup at restaurant">
+          <div class="overlay"><span>Weddings</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/dining setting.jpg" alt="Elegant restaurant seating">
+          <div class="overlay"><span>Signature seating</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/mini parties.jpg" alt="Mini party dining scene">
+          <div class="overlay"><span>Social dining</span></div>
+        </article>
+        <article class="gallery-card">
+          <img src="../images/weddings.jpg" alt="Celebration setup">
+          <div class="overlay"><span>Celebrations</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-panel is-hidden" data-gallery-panel="food" hidden>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="../images/jollof.webp" alt="Jollof rice"><div class="overlay"><span>Jollof</span></div></article>
+        <article class="gallery-card"><img src="../images/fufu.webp" alt="Fufu with soup"><div class="overlay"><span>Fufu</span></div></article>
+        <article class="gallery-card"><img src="../images/seafoodboil.webp" alt="Seafood boil"><div class="overlay"><span>Seafood Boil</span></div></article>
+        <article class="gallery-card"><img src="../images/beans.jpg" alt="Beans and plantain"><div class="overlay"><span>Beans & Plantain</span></div></article>
+        <article class="gallery-card"><img src="../images/okro.webp" alt="Okro soup"><div class="overlay"><span>Okro Soup</span></div></article>
+        <article class="gallery-card"><img src="../images/yam.jpeg" alt="Yam and stew"><div class="overlay"><span>Yam & Stew</span></div></article>
+      </div>
+    </section>
+
+    <section class="gallery-panel is-hidden" data-gallery-panel="drinks" hidden>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="../images/iced tea.avif" alt="Iced tea"><div class="overlay"><span>Iced Tea</span></div></article>
+        <article class="gallery-card"><img src="../images/milkshake.jpg" alt="Milkshake"><div class="overlay"><span>Milkshake</span></div></article>
+        <article class="gallery-card"><img src="../images/mint-mojito-cocktail.png" alt="Mojito"><div class="overlay"><span>Mojito</span></div></article>
+        <article class="gallery-card"><img src="../images/Healthy-Fruit-Juice.png" alt="Fruit juice"><div class="overlay"><span>Fruit Juice</span></div></article>
+        <article class="gallery-card"><img src="../images/mixed-berry-smoothie-3-min.jpg" alt="Berry smoothie"><div class="overlay"><span>Smoothie</span></div></article>
+        <article class="gallery-card"><img src="../images/soft drinks.webp" alt="Soft drinks"><div class="overlay"><span>Soft Drinks</span></div></article>
+      </div>
+    </section>
+
+    <section class="gallery-panel is-hidden" data-gallery-panel="ambience" hidden>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="../images/catering-service-restaurant.avif" alt="Luxury dining room"><div class="overlay"><span>Luxury Dining</span></div></article>
+        <article class="gallery-card"><img src="../images/dining setting.jpg" alt="Restaurant seating"><div class="overlay"><span>Signature Seating</span></div></article>
+        <article class="gallery-card"><img src="../images/restaurant-karaoke-room.jpg" alt="Night ambience"><div class="overlay"><span>Evening Energy</span></div></article>
+        <article class="gallery-card"><img src="../images/birthday-celebration-event.jpg" alt="Birthday setup"><div class="overlay"><span>Celebrations</span></div></article>
+        <article class="gallery-card"><img src="../images/weddings.jpg" alt="Wedding setup"><div class="overlay"><span>Wedding Events</span></div></article>
+        <article class="gallery-card"><img src="../images/mini parties.jpg" alt="Mini party dining"><div class="overlay"><span>Social Dining</span></div></article>
+      </div>
+    </section>
+
+    <section class="gallery-panel is-hidden" data-gallery-panel="events" hidden>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="../images/birthday-celebration-event.jpg" alt="Birthday celebrations"><div class="overlay"><span>Birthday Celebrations</span></div></article>
+        <article class="gallery-card"><img src="../images/buffets.webp" alt="Buffets"><div class="overlay"><span>Buffets</span></div></article>
+        <article class="gallery-card"><img src="../images/cultural display.png" alt="Cultural events"><div class="overlay"><span>Cultural Events</span></div></article>
+        <article class="gallery-card"><img src="../images/funerals.jpg" alt="Funeral events"><div class="overlay"><span>Funeral Events</span></div></article>
+        <article class="gallery-card"><img src="../images/kizomba night.jpg" alt="Kizomba night"><div class="overlay"><span>Kizomba Night</span></div></article>
+        <article class="gallery-card"><img src="../images/weddings.jpg" alt="Weddings"><div class="overlay"><span>Weddings</span></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

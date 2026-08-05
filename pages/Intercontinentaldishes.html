@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercontinental Dishes</title>
+    <title>Intercontinental Dishes | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-<a href="menu.html" target="_blank" rel="noopener noreferrer">Our Popular Dishes</a>
-<a href="Ghanaiandishes.html" target="_blank" rel="noopener noreferrer">Ghanaian Dishes</a>
-<a href="IntercontinentalDishes.html" target="_blank" rel="noopener noreferrer">Intercontinental Dishes</a>
-<a href="Drinks.html" target="_blank" rel="noopener noreferrer">Drinks</a>
-<a href="Desserts.html" target="_blank" rel="noopener noreferrer">Desserts</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <img src="../images/Beef-Tacos.webp" alt="">
-    <p>Beef Tacos</p>
-    <p>GHS 300.00</p>
-    <img src="../images/chicken fajitas.jpg" alt="">
-    <p>Chicken Fajitas</p>
-    <p>GHS 250.00</p>
-    <img src="../images/indian-chicken-curry.jpg" alt="">
-    <p>Indian Chicken Curry</p>
-    <p>GHS 350.00</p>
-    <img src="../images/noodlesoup.webp" alt="">
-    <p>Noodle Soup</p>
-    <p>GHS 200.00</p>
-    <img src="../images/ratatouille.jpg" alt="">
-    <p>Ratatouille</p>
-    <p>GHS 300.00</p>
-    <img src="../images/seafoodboil.webp" alt="">
-    <p>Seafood Boil</p>
-    <p>GHS 400.00</p>
-    <img src="../images/sticky_mango_rice.jpg" alt="">
-    <p>Sticky Mango Rice</p>
-    <p>GHS 250.00</p>
-    <img src="../images/tteokbokki.jpg" alt="">
-    <p>Tteokbokki</p>
-    <p>GHS 200.00</p>
-    <img src="../images/sushi.png" alt="">
-    <p>Sushi</p>
-    <p>GHS 500.00</p>
-    <img src="../images/Creamy-Garlic-Parmesan-Chicken-Spaghetti.webp" alt="">
-    <p>Creamy Garlic Parmesan Chicken Spaghetti</p>
-    <p>GHS 350.00</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Global favorites</span>
+        <h1>International flavors, local hospitality.</h1>
+        <p>Explore a curated selection of globally inspired dishes that bring vibrant taste and elevated presentation to the table.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/sushi.png" alt="Sushi dish">
+        <div class="promo-text">
+          <strong>World-inspired</strong>
+          <span>Tacos • curries • sushi • pasta</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="category-nav" aria-label="Menu categories">
+      <a class="category-link" href="menu.html">Our Popular Dishes</a>
+      <a class="category-link" href="Ghanaiandishes.html">Ghanaian Dishes</a>
+      <a class="category-link" href="Intercontinentaldishes.html">Intercontinental Dishes</a>
+      <a class="category-link" href="Drinks.html">Drinks</a>
+      <a class="category-link" href="Desserts.html">Desserts</a>
+    </nav>
+
+    <section class="page-grid">
+      <article class="menu-card"><img src="../images/Beef-Tacos.webp" alt="Beef Tacos"><div class="card-copy"><h3>Beef Tacos</h3><div class="meta"><span class="price-tag">GHS 300.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/chicken fajitas.jpg" alt="Chicken Fajitas"><div class="card-copy"><h3>Chicken Fajitas</h3><div class="meta"><span class="price-tag">GHS 250.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/indian-chicken-curry.jpg" alt="Indian Chicken Curry"><div class="card-copy"><h3>Indian Chicken Curry</h3><div class="meta"><span class="price-tag">GHS 350.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/noodlesoup.webp" alt="Noodle Soup"><div class="card-copy"><h3>Noodle Soup</h3><div class="meta"><span class="price-tag">GHS 200.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/ratatouille.jpg" alt="Ratatouille"><div class="card-copy"><h3>Ratatouille</h3><div class="meta"><span class="price-tag">GHS 300.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/seafoodboil.webp" alt="Seafood Boil"><div class="card-copy"><h3>Seafood Boil</h3><div class="meta"><span class="price-tag">GHS 400.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/sticky_mango_rice.jpg" alt="Sticky Mango Rice"><div class="card-copy"><h3>Sticky Mango Rice</h3><div class="meta"><span class="price-tag">GHS 250.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/tteokbokki.jpg" alt="Tteokbokki"><div class="card-copy"><h3>Tteokbokki</h3><div class="meta"><span class="price-tag">GHS 200.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/sushi.png" alt="Sushi"><div class="card-copy"><h3>Sushi</h3><div class="meta"><span class="price-tag">GHS 500.00</span></div></div></article>
+      <article class="menu-card"><img src="../images/Creamy-Garlic-Parmesan-Chicken-Spaghetti.webp" alt="Creamy Garlic Parmesan Chicken Spaghetti"><div class="card-copy"><h3>Creamy Garlic Parmesan Chicken Spaghetti</h3><div class="meta"><span class="price-tag">GHS 350.00</span></div></div></article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

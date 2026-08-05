@@ -3,52 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-    <img src="/images/logo1.jpg" alt="">
-   <p>Spicy Potz</p>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-   <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
-    <a href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a>
-    <a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
-    <a href="reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a>
-    <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-    <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
-    <a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Our menu</span>
+        <h1>Made for every craving.</h1>
+        <p>Explore our signature favorites across Ghanaian classics, intercontinental comfort food, fresh drinks, and satisfying desserts.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/menu.webp" alt="Spicy Potz menu items">
+        <div class="promo-text">
+          <strong>House favorites</strong>
+          <span>Beef burger • jollof • grilled tilapia • steak</span>
+        </div>
+      </div>
+    </section>
 
-<h1>Our Menu</h1>
-<a href="menu.html" target="_blank" rel="noopener noreferrer">Our Popular Dishes</a>
-<a href="Ghanaiandishes.html" target="_blank" rel="noopener noreferrer">Ghanaian Dishes</a>
-<a href="IntercontinentalDishes.html" target="_blank" rel="noopener noreferrer">Intercontinental Dishes</a>
-<a href="Drinks.html" target="_blank" rel="noopener noreferrer">Drinks</a>
-<a href="Desserts.html" target="_blank" rel="noopener noreferrer">Desserts</a>
+    <nav class="category-nav" aria-label="Menu categories">
+      <a class="category-link" href="menu.html">Our Popular Dishes</a>
+      <a class="category-link" href="Ghanaiandishes.html">Ghanaian Dishes</a>
+      <a class="category-link" href="Intercontinentaldishes.html">Intercontinental Dishes</a>
+      <a class="category-link" href="Drinks.html">Drinks</a>
+      <a class="category-link" href="Desserts.html">Desserts</a>
+    </nav>
 
-<img src="../images/beef h.webp" alt="">
-<p>Beef Hamburger</p>
-<p>GHS 170.00</p>
-<img src="../images/cs.jpg" alt="">
-<p>Caesar Salad</p>
-<p>GHS 80.00</p>
-<img src="../images/beef-fried-rice.png" alt="">
-<p>Beef Fried rice</p>
-<p>GHS 150.00</p>
-<img src="../images/buttermilk-fried-chicken-4x3-1.jpg" alt="">
-<p>Fried Chicken</p>
-<p>GHS 100.00</p>
-<img src="../images/Sisi-Yemmie-Grilled-Tilapia-Fish.jpg" alt="">
-<p>Grilled Tilapia</p>
-<p>GHS 200.00</p>
-<img src="../images/fufu.webp" alt="">
-<p>Fufu with Goat light soup</p>
-<p>GHS 350.00</p>
-<img src="../images/jollof.webp" alt="">
-<p>Jollof rice</p>
-<p>GHS 120.00</p>
-<img src="../images/mashed.jpg" alt="">
-<p>Mashed Potatoes with steak</p>
-<p>GHS 220.00</p>
+    <section class="page-grid">
+      <article class="menu-card">
+        <img src="../images/beef h.webp" alt="Beef Hamburger">
+        <div class="card-copy">
+          <h3>Beef Hamburger</h3>
+          <div class="meta"><span class="price-tag">GHS 170.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/cs.jpg" alt="Caesar Salad">
+        <div class="card-copy">
+          <h3>Caesar Salad</h3>
+          <div class="meta"><span class="price-tag">GHS 80.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/beef-fried-rice.png" alt="Beef Fried rice">
+        <div class="card-copy">
+          <h3>Beef Fried rice</h3>
+          <div class="meta"><span class="price-tag">GHS 150.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/buttermilk-fried-chicken-4x3-1.jpg" alt="Fried Chicken">
+        <div class="card-copy">
+          <h3>Fried Chicken</h3>
+          <div class="meta"><span class="price-tag">GHS 100.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/Sisi-Yemmie-Grilled-Tilapia-Fish.jpg" alt="Grilled Tilapia">
+        <div class="card-copy">
+          <h3>Grilled Tilapia</h3>
+          <div class="meta"><span class="price-tag">GHS 200.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/fufu.webp" alt="Fufu with Goat light soup">
+        <div class="card-copy">
+          <h3>Fufu with Goat light soup</h3>
+          <div class="meta"><span class="price-tag">GHS 350.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/jollof.webp" alt="Jollof rice">
+        <div class="card-copy">
+          <h3>Jollof rice</h3>
+          <div class="meta"><span class="price-tag">GHS 120.00</span></div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../images/mashed.jpg" alt="Mashed Potatoes with steak">
+        <div class="card-copy">
+          <h3>Mashed Potatoes with steak</h3>
+          <div class="meta"><span class="price-tag">GHS 220.00</span></div>
+        </div>
+      </article>
+    </section>
 
-<button>View Full Menu</button>
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="order.html" class="btn btn-primary">View Full Menu</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

@@ -1,31 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spicy Potz</title>
-    <link rel="stylesheet" href="../src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spicy Potz | Signature Dining</title>
+  <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <div>
-    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
-    <a href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a>
-    <a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
-    <a href="reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a>
-    <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-    <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
-    <a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <img src="../images/logo1.jpg"  alt="">
-    <p>Spicy Potz</p>
-    
-    <p>Welcome to Spicy Potz</p>
-    <p>GHANAIAN SOUL, CONTINENTAL FLAIR</p>
-    <p>WHERE EVERY BITE BRINGS THE HEAT</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Ghanaian Soul, Continental Flair</span>
+          <h1>Bold flavor.<br>Warm nights.<br><span class="accent">Beautiful bites.</span></h1>
+          <p>
+            Welcome to Spicy Potz, where vibrant Ghanaian classics meet contemporary dining in a glowing,
+            luxurious setting designed for unforgettable meals, celebrations, and late-night cravings.
+          </p>
 
-    <p>View Menu</p>
-    <p>Order Now</p>
-    <img src="../images/menu.webp" alt="">
+          <div class="button-row">
+            <a href="menu.html" class="btn btn-primary">View Menu</a>
+            <a href="order.html" class="btn btn-secondary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Restaurant interior preview">
+          <img class="hero-photo" src="../images/dining setting.jpg" alt="Luxury dining room at Spicy Potz">
+          <div class="feature-card">
+            <strong>4.9/5</strong>
+            <span>Guest-loved dining experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Favorites Worth Savoring</h2>
+          <p>From chef-fired classics to rich Ghanaian comfort dishes, every plate is made to leave a lasting impression.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="../images/jollof.webp" alt="Jollof rice">
+            <div class="menu-copy">
+              <h3>Jollof Rice</h3>
+              <p>Fragrant tomato rice with spice and smoky depth.</p>
+              <div class="meta-row">
+                <span class="price">GHS 120.00</span>
+                <button class="add-to-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <img src="../images/fufu.webp" alt="Fufu with goat light soup">
+            <div class="menu-copy">
+              <h3>Fufu & Light Soup</h3>
+              <p>Classic Ghanaian comfort with rich, aromatic broth.</p>
+              <div class="meta-row">
+                <span class="price">GHS 350.00</span>
+                <button class="add-to-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <img src="../images/buttermilk-fried-chicken-4x3-1.jpg" alt="Fried chicken">
+            <div class="menu-copy">
+              <h3>Signature Fried Chicken</h3>
+              <p>Crispy golden comfort with a house-made spice blend.</p>
+              <div class="meta-row">
+                <span class="price">GHS 100.00</span>
+                <button class="add-to-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <img src="../images/seafoodboil.webp" alt="Seafood boil">
+            <div class="menu-copy">
+              <h3>Seafood Boil</h3>
+              <p>Fresh seafood, vibrant seasoning, and a fiery finish.</p>
+              <div class="meta-row">
+                <span class="price">GHS 260.00</span>
+                <button class="add-to-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why Guests Keep Coming Back</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-box">
+            <div class="eyebrow">Atmosphere</div>
+            <h3>Luxury dining energy</h3>
+            <p>Warm ambient lighting, wood textures, and stylish interiors create a premium restaurant feel for every occasion.</p>
+          </article>
+
+          <article class="feature-box">
+            <div class="eyebrow">Menu</div>
+            <h3>Big flavor, balanced plates</h3>
+            <p>From hearty Ghanaian dishes to comforting continental favorites, every meal is designed for satisfaction.</p>
+          </article>
+
+          <article class="feature-box">
+            <div class="eyebrow">Service</div>
+            <h3>Quick, friendly, memorable</h3>
+            <p>Our team delivers warm hospitality with efficient ordering and a dining experience that feels personal from start to finish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ambience That Sets the Mood</h2>
+          <p>A restaurant designed for gatherings, romantic dinners, casual lunches, and celebratory moments.</p>
+        </div>
+
+        <div class="ambience-grid">
+          <article class="ambience-card">
+            <img src="../images/restaurant-karaoke-room.jpg" alt="Restaurant lounge with warm lighting">
+            <div class="card-copy">
+              <h3>Evening Lounge</h3>
+              <p>Warm reds and oranges meet elegant seating for a cozy luxury atmosphere.</p>
+            </div>
+          </article>
+
+          <article class="ambience-card">
+            <img src="../images/birthday-celebration-event.jpg" alt="Birthday event setup">
+            <div class="card-copy">
+              <h3>Celebration Dining</h3>
+              <p>Ideal for birthdays, gatherings, and memorable nights filled with ambience and flavor.</p>
+            </div>
+          </article>
+
+          <article class="ambience-card">
+            <img src="../images/catering-service-restaurant.avif" alt="Restaurant dining space">
+            <div class="card-copy">
+              <h3>Modern Signature Space</h3>
+              <p>Refined textures, rich wood finishes, and warm lighting define the Spicy Potz experience.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Delicious dining in a warm, modern setting</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

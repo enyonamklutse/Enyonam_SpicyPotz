@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online | Spicy Potz</title>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body class="order-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container order-shell">
+    <section class="panel menu-panel" aria-labelledby="order-menu-heading">
+      <div class="panel-header">
+        <h2 id="order-menu-heading">Order online</h2>
+        <span class="tag">Fresh & hot</span>
+      </div>
+
+      <div class="order-menu-grid">
+        <article class="order-item" data-name="Jollof Rice" data-price="120">
+          <img src="../images/jollof.webp" alt="Jollof rice">
+          <div class="details">
+            <h3>Jollof Rice</h3>
+            <p>Tomato rice with smoky depth and warm spice.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 120.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="order-item" data-name="Fufu & Light Soup" data-price="350">
+          <img src="../images/fufu.webp" alt="Fufu with light soup">
+          <div class="details">
+            <h3>Fufu & Light Soup</h3>
+            <p>Rich, comforting Ghanaian classic with goat soup.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 350.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="order-item" data-name="Fried Chicken" data-price="100">
+          <img src="../images/buttermilk-fried-chicken-4x3-1.jpg" alt="Fried chicken">
+          <div class="details">
+            <h3>Fried Chicken</h3>
+            <p>Crispy, juicy, and served with a flavorful kick.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 100.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="order-item" data-name="Seafood Boil" data-price="260">
+          <img src="../images/seafoodboil.webp" alt="Seafood boil">
+          <div class="details">
+            <h3>Seafood Boil</h3>
+            <p>Fresh seafood with a bold, spicy house seasoning.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 260.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="order-item" data-name="Smoky Burger" data-price="170">
+          <img src="../images/beef h.webp" alt="Beef hamburger">
+          <div class="details">
+            <h3>Smoky Burger</h3>
+            <p>Juicy beef stacked with bold flavor and texture.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 170.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="order-item" data-name="Tilapia Grill" data-price="200">
+          <img src="../images/Sisi-Yemmie-Grilled-Tilapia-Fish.jpg" alt="Grilled tilapia">
+          <div class="details">
+            <h3>Tilapia Grill</h3>
+            <p>Perfectly seared fish with fresh herbs and citrus notes.</p>
+            <div class="item-controls">
+              <span class="item-price">GHS 200.00</span>
+              <button type="button" class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="panel cart-panel" aria-labelledby="cart-heading">
+      <h3 id="cart-heading">Your order</h3>
+      <ul id="cart-items"></ul>
+
+      <div class="summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">GHS 0.00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <strong id="delivery-fee">GHS 0.00</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="grand-total">GHS 0.00</strong>
+        </div>
+      </div>
+
+      <form id="order-form" class="order-form">
+        <label>
+          Full name
+          <input id="customer-name" type="text" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Contact number
+          <input id="contact" type="tel" placeholder="055 123 4567" required>
+        </label>
+
+        <label>
+          Delivery area
+          <select>
+            <option>East Legon</option>
+            <option>Osu</option>
+            <option>Labone</option>
+            <option>Accra Central</option>
+            <option>Adabraka</option>
+          </select>
+        </label>
+
+        <label>
+          Notes
+          <textarea placeholder="Extra sauce, allergies, delivery instructions..."></textarea>
+        </label>
+
+        <button class="btn btn-primary checkout-btn" type="submit">Place order</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Order online and enjoy the flavor at home</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

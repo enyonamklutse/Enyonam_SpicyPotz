@@ -3,44 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks</title>
+    <title>Drinks | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-<a href="menu.html" target="_blank" rel="noopener noreferrer">Our Popular Dishes</a>
-<a href="Ghanaiandishes.html" target="_blank" rel="noopener noreferrer">Ghanaian Dishes</a>
-<a href="IntercontinentalDishes.html" target="_blank" rel="noopener noreferrer">Intercontinental Dishes</a>
-<a href="Drinks.html" target="_blank" rel="noopener noreferrer">Drinks</a>
-<a href="Desserts.html" target="_blank" rel="noopener noreferrer">Desserts</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <img src="../images/milkshake.jpg" alt="Milkshake">
-    <p>Milkshake</p>
-    <p>GHS 50.00</p>
-    <img src="../images/beer.jpg" alt="Beer">
-    <p>Beer</p>
-    <p>GHS 30.00</p>
-    <img src="../images/iced tea.avif" alt="Iced Tea">
-    <p>Iced Tea</p>
-    <p>GHS 45.00</p>
-    <img src="../images/wine.jpg" alt="Wine">
-    <p>Wine</p>
-    <p>GHS 200.00</p>
-    <img src="../images/tequilla.jpg" alt="Tequila">
-    <p>Tequila</p>
-    <p>GHS 150.00</p>
-    <img src="../images/strawberry.webp" alt="Strawberry">
-    <p>Strawberry Sorbet</p>
-    <p>GHS 60.00</p>
-    <img src="../images/Healthy-Fruit-Juice.png" alt="Healthy Fruit Juice">
-    <p>Healthy Fruit Juice</p>
-    <p>GHS 70.00</p>
-    <img src="../images/mint-mojito-cocktail.png" alt="Mint Mojito Cocktail">
-    <p>Mint Mojito Cocktail</p>
-    <p>GHS 80.00</p>
-    <img src="../images/mixed-berry-smoothie-3-min.jpg" alt="Mixed Berry Smoothie">
-    <p>Mixed Berry Smoothie</p>
-    <p>GHS 90.00</p>
-    <img src="../images/soft drinks.webp" alt="Soft Drinks">
-    <p>Soft Drinks</p>
-    <p>GHS 25.00</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Sip, savor, repeat</span>
+        <h1>Refreshment that fits every mood.</h1>
+        <p>From cool mocktails to indulgent cocktails and signature house pours, our drinks menu is built for every occasion.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/iced tea.avif" alt="Iced tea drink">
+        <div class="promo-text">
+          <strong>Signature pours</strong>
+          <span>Mocktails • wine • cocktails • smoothies</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="category-nav" aria-label="Drink categories">
+      <a class="category-link" href="menu.html">Our Popular Dishes</a>
+      <a class="category-link" href="Ghanaiandishes.html">Ghanaian Dishes</a>
+      <a class="category-link" href="Intercontinentaldishes.html">Intercontinental Dishes</a>
+      <a class="category-link" href="Drinks.html">Drinks</a>
+      <a class="category-link" href="Desserts.html">Desserts</a>
+    </nav>
+
+    <section class="page-grid">
+      <article class="menu-card">
+        <img src="../images/milkshake.jpg" alt="Milkshake">
+        <div class="card-copy">
+          <h3>Milkshake</h3>
+          <div class="meta"><span class="price-tag">GHS 50.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/beer.jpg" alt="Beer">
+        <div class="card-copy">
+          <h3>Beer</h3>
+          <div class="meta"><span class="price-tag">GHS 30.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/iced tea.avif" alt="Iced Tea">
+        <div class="card-copy">
+          <h3>Iced Tea</h3>
+          <div class="meta"><span class="price-tag">GHS 45.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/wine.jpg" alt="Wine">
+        <div class="card-copy">
+          <h3>Wine</h3>
+          <div class="meta"><span class="price-tag">GHS 200.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/tequilla.jpg" alt="Tequila">
+        <div class="card-copy">
+          <h3>Tequila</h3>
+          <div class="meta"><span class="price-tag">GHS 150.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/strawberry.webp" alt="Strawberry Sorbet">
+        <div class="card-copy">
+          <h3>Strawberry Sorbet</h3>
+          <div class="meta"><span class="price-tag">GHS 60.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/Healthy-Fruit-Juice.png" alt="Healthy Fruit Juice">
+        <div class="card-copy">
+          <h3>Healthy Fruit Juice</h3>
+          <div class="meta"><span class="price-tag">GHS 70.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/mint-mojito-cocktail.png" alt="Mint Mojito Cocktail">
+        <div class="card-copy">
+          <h3>Mint Mojito Cocktail</h3>
+          <div class="meta"><span class="price-tag">GHS 80.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/mixed-berry-smoothie-3-min.jpg" alt="Mixed Berry Smoothie">
+        <div class="card-copy">
+          <h3>Mixed Berry Smoothie</h3>
+          <div class="meta"><span class="price-tag">GHS 90.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/soft drinks.webp" alt="Soft Drinks">
+        <div class="card-copy">
+          <h3>Soft Drinks</h3>
+          <div class="meta"><span class="price-tag">GHS 25.00</span></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

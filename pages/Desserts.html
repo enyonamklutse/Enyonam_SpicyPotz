@@ -3,44 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desserts</title>
+    <title>Desserts | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-<a href="menu.html" target="_blank" rel="noopener noreferrer">Our Popular Dishes</a>
-<a href="Ghanaiandishes.html" target="_blank" rel="noopener noreferrer">Ghanaian Dishes</a>
-<a href="IntercontinentalDishes.html" target="_blank" rel="noopener noreferrer">Intercontinental Dishes</a>
-<a href="Drinks.html" target="_blank" rel="noopener noreferrer">Drinks</a>
-<a href="Desserts.html" target="_blank" rel="noopener noreferrer">Desserts</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <img src="../images/brownie.jpg" alt="">
-    <p>Brownie</p>
-    <p>GHS 50.00</p>
-    <img src="../images/cakepop.jpg" alt="">
-    <p>Cake Pop</p>
-    <p>GHS 30.00 (2 pieces)</p>
-    <img src="../images/cheesecake.webp" alt="">
-    <p>Cheesecake</p>
-    <p>GHS 45.00 (1 slice)</p>
-    <img src="../images/chocolate cake.webp" alt="">
-    <p>Chocolate Cake</p>
-    <p>GHS 60.00 (1 slice)</p>
-    <img src="../images/cookies.jpg" alt="">
-    <p>Cookies</p>
-    <p>GHS 25.00</p>
-    <img src="../images/cupcake.jpg" alt="">
-    <p>Cupcake</p>
-    <p>GHS 35.00</p>
-    <img src="../images/donuts.webp" alt="">
-    <p>Donuts</p>
-    <p>GHS 40.00</p>
-    <img src="../images/icecream.jpg" alt="">
-    <p>Ice Cream</p>
-    <p>GHS 50.00 (1 scoop)</p>
-    <img src="../images/tiramisu.webp" alt="">
-    <p>Tiramisu</p>
-    <p>GHS 60.00</p>
-    <img src="../images/waffles.jpg" alt="">
-    <p>Waffles</p>
-    <p>GHS 70.00</p>
+  <main class="page-shell">
+    <section class="page-hero">
+      <div>
+        <span class="eyebrow">Sweet finish</span>
+        <h1>Desserts to remember.</h1>
+        <p>End your meal with rich, comforting desserts made for indulgent cravings and celebratory moments.</p>
+      </div>
+      <div class="promo-panel">
+        <img src="../images/chocolate cake.webp" alt="Chocolate cake dessert">
+        <div class="promo-text">
+          <strong>House favorites</strong>
+          <span>Brownie • Cheesecake • Waffles</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="category-nav" aria-label="Dessert categories">
+      <a class="category-link" href="menu.html">Our Popular Dishes</a>
+      <a class="category-link" href="Ghanaiandishes.html">Ghanaian Dishes</a>
+      <a class="category-link" href="Intercontinentaldishes.html">Intercontinental Dishes</a>
+      <a class="category-link" href="Drinks.html">Drinks</a>
+      <a class="category-link" href="Desserts.html">Desserts</a>
+    </nav>
+
+    <section class="page-grid">
+      <article class="menu-card">
+        <img src="../images/brownie.jpg" alt="Brownie">
+        <div class="card-copy">
+          <h3>Brownie</h3>
+          <div class="meta"><span class="price-tag">GHS 50.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/cakepop.jpg" alt="Cake Pop">
+        <div class="card-copy">
+          <h3>Cake Pop</h3>
+          <div class="meta"><span class="price-tag">GHS 30.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/cheesecake.webp" alt="Cheesecake">
+        <div class="card-copy">
+          <h3>Cheesecake</h3>
+          <div class="meta"><span class="price-tag">GHS 45.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/chocolate cake.webp" alt="Chocolate Cake">
+        <div class="card-copy">
+          <h3>Chocolate Cake</h3>
+          <div class="meta"><span class="price-tag">GHS 60.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/cookies.jpg" alt="Cookies">
+        <div class="card-copy">
+          <h3>Cookies</h3>
+          <div class="meta"><span class="price-tag">GHS 25.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/cupcake.jpg" alt="Cupcake">
+        <div class="card-copy">
+          <h3>Cupcake</h3>
+          <div class="meta"><span class="price-tag">GHS 35.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/donuts.webp" alt="Donuts">
+        <div class="card-copy">
+          <h3>Donuts</h3>
+          <div class="meta"><span class="price-tag">GHS 40.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/icecream.jpg" alt="Ice Cream">
+        <div class="card-copy">
+          <h3>Ice Cream</h3>
+          <div class="meta"><span class="price-tag">GHS 50.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/tiramisu.webp" alt="Tiramisu">
+        <div class="card-copy">
+          <h3>Tiramisu</h3>
+          <div class="meta"><span class="price-tag">GHS 60.00</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img src="../images/waffles.jpg" alt="Waffles">
+        <div class="card-copy">
+          <h3>Waffles</h3>
+          <div class="meta"><span class="price-tag">GHS 70.00</span></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

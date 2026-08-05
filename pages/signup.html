@@ -4,44 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://kit.fontawesome.com/69b7f0c38b.js" crossorigin="anonymous"></script>
-    <title>Signup</title>
+    <title>Signup | Spicy Potz</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
-<body>
-     <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
-    <a href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a>
-    <a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
-    <a href="reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a>
-    <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-    <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
-    <a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a>
+<body class="page-body">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand" aria-label="Spicy Potz home">
+        <img src="../images/logo1.jpg" alt="Spicy Potz logo" class="brand-mark">
+        <span class="brand-name">Spicy Potz</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <img src="../images/logo1.jpg" alt="">
-    <p>Spicy Potz</p>
-    <h1>Create Account</h1>
-    <p>Sign up and get started</p>
+  <main class="page-shell auth-layout">
+    <div class="auth-visual">
+      <img src="../images/jollof.webp" alt="Jollof rice dish">
+    </div>
 
-    <img src="../images/jollof.webp" alt="">
+    <div class="signup-card">
+      <span class="eyebrow">Join us</span>
+      <h2>Create Account</h2>
+      <p style="color: var(--muted); margin-top: 0;">Sign up and get started.</p>
 
-    <form action="" method="get">
-        <label for="Full_name">Full name:</label><br>
-        <input type="text" id="" name="Full_name"required><br>
-
-        <label for="Email">Email:</label><br>
-        <input type="email" name="Email" id=""required><br>
-
-        <label for="Password">Password:</label><br>
-        <input type="password" name="Password" id="" required><br>
-
-        <label for="Confirm Password">Confirm Paswword:</label><br>
-        <input type="password" name="Confirm Password" id="" required>
-        
-        <div>
-        <input type="checkbox" name="" id="terms" required>
-        <label for="terms">I agree to the <a href="terms.html" target="_blank" rel="noopener noreferrer">terms and conditions.</a></label>
+      <form action="" method="get" class="form-grid">
+        <div class="form-row">
+          <label for="Full_name">Full name:</label>
+          <input type="text" id="Full_name" name="Full_name" required>
         </div>
-    </form>
-    <button>Sign Up</button>
-    
 
+        <div class="form-row">
+          <label for="Email">Email:</label>
+          <input type="email" name="Email" id="Email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="Password">Password:</label>
+          <input type="password" name="Password" id="Password" required>
+        </div>
+
+        <div class="form-row">
+          <label for="Confirm_Password">Confirm Password:</label>
+          <input type="password" name="Confirm Password" id="Confirm_Password" required>
+        </div>
+
+        <div class="inline-check">
+          <input type="checkbox" name="terms" id="terms" required>
+          <label for="terms">I agree to the <a href="terms.html" target="_blank" rel="noopener noreferrer" class="muted-link">terms and conditions.</a></label>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Spicy Potz • Crafted for memorable moments</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
 </body>
 </html>

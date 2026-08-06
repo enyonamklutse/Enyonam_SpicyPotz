@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile navigation toggle
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Gallery filter buttons for category-based content
   const galleryButtons = document.querySelectorAll('.category-link[data-gallery-filter]');
   const galleryPanels = document.querySelectorAll('.gallery-panel');
 
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Shopping cart and order form behavior
   const addButtons = document.querySelectorAll('.add-to-cart');
   const cartItems = document.getElementById('cart-items');
   const subtotalEl = document.getElementById('subtotal');
@@ -39,10 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cart = [];
 
+  // Format prices in Ghana cedi currency
   function formatGhs(value) {
     return `GHS ${value.toFixed(2)}`;
   }
 
+  // Refresh the cart list and totals shown on the page
   function updateCartSummary() {
     if (!cartItems || !subtotalEl || !totalEl || !deliveryFeeEl) return;
 
@@ -73,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     totalEl.textContent = formatGhs(total);
   }
 
+  // Add a selected menu item to the cart
   addButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.menu-item');
@@ -101,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Handle checkout submission and reset the order state
   if (orderForm) {
     orderForm.addEventListener('submit', (event) => {
       event.preventDefault();
